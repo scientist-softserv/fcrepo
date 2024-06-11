@@ -14,7 +14,7 @@
   <properties>
     <!-- integration test properties -->
     <fcrepo.test.context.path>/</fcrepo.test.context.path>
-    
+
     <!-- sonar -->
     <sonar.artifact.path>${project.build.directory}${file.separator}${project.artifactId}-${project.version}.war</sonar.artifact.path>
 
@@ -83,7 +83,7 @@
         </exclusion>
       </exclusions>
     </dependency>
-    
+
     <dependency>
       <groupId>io.dropwizard.metrics</groupId>
       <artifactId>metrics-core</artifactId>
@@ -268,9 +268,10 @@
     <dependency>
       <groupId>org.modeshape</groupId>
       <artifactId>modeshape-jcr</artifactId>
+      <version>${modeshape.version}</version>
       <scope>runtime</scope>
     </dependency>
-    
+
   </dependencies>
   <build>
     <resources>

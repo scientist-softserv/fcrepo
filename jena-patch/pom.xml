@@ -38,6 +38,7 @@
     <!--Test Gear-->
     <dependency>
       <groupId>org.modeshape</groupId>
+      <version>${modeshape.version}</version>
       <artifactId>modeshape-jcr</artifactId>
       <scope>test</scope>
     </dependency>

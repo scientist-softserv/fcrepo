@@ -102,6 +102,7 @@
     <dependency>
       <groupId>org.modeshape</groupId>
       <artifactId>modeshape-jcr</artifactId>
+      <version>${modeshape.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>

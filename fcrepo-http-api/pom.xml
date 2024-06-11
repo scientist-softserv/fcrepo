@@ -62,6 +62,7 @@
     <dependency>
       <groupId>org.modeshape</groupId>
       <artifactId>modeshape-jcr</artifactId>
+      <version>${modeshape.version}</version>
     </dependency>
 
     <dependency>
@@ -91,7 +92,7 @@
       <artifactId>metrics-annotation</artifactId>
       <version>${metrics.version}</version>
     </dependency>
-    
+
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-server</artifactId>
@@ -203,9 +204,9 @@
       <version>1.4</version>
       <scope>test</scope>
     </dependency>
-    <!-- This dependency is for compile-time: it keeps this module independent 
-      of any given choice of JAX-RS implementation. It must be _after_ the test 
-      gear. Otherwise it will get loaded during test phase, but because this is 
+    <!-- This dependency is for compile-time: it keeps this module independent
+      of any given choice of JAX-RS implementation. It must be _after_ the test
+      gear. Otherwise it will get loaded during test phase, but because this is
       just an API, the tests will not be able to execute. -->
     <dependency>
       <groupId>javax</groupId>

@@ -21,7 +21,7 @@
       javax.jcr,
       javax.servlet.http,
       javax.ws.rs.*,
-      
+
       com.codahale.metrics.*,
       com.fasterxml.jackson.core,
       org.apache.jena.*,
@@ -223,7 +223,7 @@
           <groupId>dom4j</groupId>
           <artifactId>dom4j</artifactId>
         </exclusion>
-        <!-- velocity is already bringing in commons-collections-3.2.1, whereas velocity-tools 
+        <!-- velocity is already bringing in commons-collections-3.2.1, whereas velocity-tools
           is bringing in 3.2 -->
         <exclusion>
           <groupId>commons-collections</groupId>
@@ -251,11 +251,11 @@
         </exclusion>
       </exclusions>
     </dependency>
-    
-    <!-- commons-digester-1.8 is explicitly added here because of a dependency 
-    convergence issue in velocity-tools. If/when velocity-tools gets its 
-    version of commons-digester in sync across its dependencies, the exclusion 
-    on commons-digester may be removed along with the explicit dependency 
+
+    <!-- commons-digester-1.8 is explicitly added here because of a dependency
+    convergence issue in velocity-tools. If/when velocity-tools gets its
+    version of commons-digester in sync across its dependencies, the exclusion
+    on commons-digester may be removed along with the explicit dependency
     declaration below -->
     <dependency>
       <groupId>commons-digester</groupId>
@@ -279,6 +279,7 @@
     <dependency>
       <groupId>org.modeshape</groupId>
       <artifactId>modeshape-jcr</artifactId>
+      <version>${modeshape.version}</version>
       <exclusions>
         <exclusion>
           <artifactId>snappy-java</artifactId>

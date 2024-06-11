@@ -65,6 +65,7 @@
     <dependency>
       <groupId>org.modeshape</groupId>
       <artifactId>modeshape-jcr</artifactId>
+      <version>${modeshape.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.narayana.jta</groupId>

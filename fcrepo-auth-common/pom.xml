@@ -14,9 +14,9 @@
     <osgi.import.packages>
       javax.jcr,
       javax.servlet.http,
-      
+
       org.modeshape.jcr.*,
-      
+
       *
     </osgi.import.packages>
     <osgi.export.packages>
@@ -38,6 +38,7 @@
     <dependency>
       <groupId>org.modeshape</groupId>
       <artifactId>modeshape-jcr</artifactId>
+      <version>${modeshape.version}</version>
     </dependency>
     <dependency>
       <groupId>org.fcrepo</groupId>
@@ -59,10 +60,10 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
     </dependency>
-  
-    <!-- This dependency is for compile-time: it keeps this module independent 
-      of any given choice of JAX-RS implementation. It must be _after_ the test 
-      gear. Otherwise it will get loaded during test phase, but because this is 
+
+    <!-- This dependency is for compile-time: it keeps this module independent
+      of any given choice of JAX-RS implementation. It must be _after_ the test
+      gear. Otherwise it will get loaded during test phase, but because this is
       just an API, the tests will not be able to execute. -->
     <dependency>
       <groupId>org.fcrepo</groupId>
@@ -119,7 +120,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
-    </dependency>   
+    </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
@@ -128,7 +129,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-    </dependency> 
+    </dependency>
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
@@ -145,7 +146,7 @@
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
     </dependency>
-	
+
     <dependency>
       <groupId>org.apache.velocity</groupId>
       <artifactId>velocity</artifactId>
@@ -176,7 +177,7 @@
           <!--Singleton ServletContainerAuthenticationProvider-->
           <reuseForks>false</reuseForks>
         </configuration>
-      </plugin>   
+      </plugin>
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
